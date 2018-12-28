@@ -1,18 +1,15 @@
 # NOTE: PLD currently uses netsurf fork (libutf8proc.spec)
-# Differences:
-# - utf8proc_property_t incompatibilities (both should be OK for netsurf)
-# - few more functions in julialang fork
-# - Unicode 9 in julialang vs Unicode 8 in netsurf
+# They differ in used buildsystem; netsurf provides .pc file upstream.
 Summary:	utf8proc library for NetSurf
 Summary(pl.UTF-8):	Biblioteka utf8proc dla projektu NetSurf
 Name:		utf8proc
-Version:	2.1.1
+Version:	2.2.0
 Release:	0.1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/JuliaStrings/utf8proc/releases
 Source0:	https://github.com/JuliaStrings/utf8proc/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	0713679a26f18d1f217c15b245a85e92
+# Source0-md5:	4514e50c9973f73375cd059fca22ad8e
 Source1:	libutf8proc.pc.in
 URL:		https://github.com/JuliaStrings/utf8proc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
