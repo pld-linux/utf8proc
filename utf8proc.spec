@@ -1,16 +1,17 @@
 # NOTE: PLD currently uses netsurf fork (libutf8proc.spec)
 # They differ in used buildsystem
-Summary:	utf8proc library for NetSurf
-Summary(pl.UTF-8):	Biblioteka utf8proc dla projektu NetSurf
+Summary:	A clean C library for processing UTF-8 Unicode data
+Summary(pl.UTF-8):	Napisana w czystym C biblioteka do przetwarzania danych UTF-8 Unicode
 Name:		utf8proc
-Version:	2.4.0
+Version:	2.7.0
 Release:	0.1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/JuliaStrings/utf8proc/releases
 Source0:	https://github.com/JuliaStrings/utf8proc/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	ccea4d10dc45749166273ae370e9ceed
-URL:		https://github.com/JuliaStrings/utf8proc
+# Source0-md5:	11e307064ed630f6a99d825608a248e4
+URL:		http://juliastrings.github.io/utf8proc/
+Obsoletes:	libutf8proc < 2.7.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,6 +29,7 @@ Summary:	Header file for utf8proc library
 Summary(pl.UTF-8):	Plik nagłówkowy biblioteki utf8proc
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Obsoletes:	libutf8proc-devel < 2.7.0
 
 %description devel
 Header file for utf8proc library.
@@ -40,6 +42,7 @@ Summary:	utf8proc static library
 Summary(pl.UTF-8):	Statyczna biblioteka utf8proc
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
+Obsoletes:	libutf8proc-static < 2.7.0
 
 %description static
 utf8proc static library.
