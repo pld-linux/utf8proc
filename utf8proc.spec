@@ -29,6 +29,7 @@ Summary:	Header file for utf8proc library
 Summary(pl.UTF-8):	Plik nagłówkowy biblioteki utf8proc
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Provides:	libutf8proc-devel = %{version}-%{release}
 Obsoletes:	libutf8proc-devel < 2.7.0
 
 %description devel
