@@ -3,13 +3,13 @@
 Summary:	A clean C library for processing UTF-8 Unicode data
 Summary(pl.UTF-8):	Napisana w czystym C biblioteka do przetwarzania danych UTF-8 Unicode
 Name:		utf8proc
-Version:	2.8.0
+Version:	2.9.0
 Release:	0.1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/JuliaStrings/utf8proc/releases
 Source0:	https://github.com/JuliaStrings/utf8proc/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	00de586d00c133bfb3caae335279d741
+# Source0-md5:	7e4ab708f463f99cc1da799726252e7c
 URL:		http://juliastrings.github.io/utf8proc/
 Obsoletes:	libutf8proc < 2.7.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -78,9 +78,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc LICENSE.md NEWS.md README.md 
+%doc LICENSE.md NEWS.md README.md
 %attr(755,root,root) %{_libdir}/libutf8proc.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libutf8proc.so.2
+%attr(755,root,root) %ghost %{_libdir}/libutf8proc.so.3
 
 %files devel
 %defattr(644,root,root,755)
