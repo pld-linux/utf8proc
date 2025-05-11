@@ -1,10 +1,8 @@
-# NOTE: PLD currently uses netsurf fork (libutf8proc.spec)
-# They differ in used buildsystem
 Summary:	A clean C library for processing UTF-8 Unicode data
 Summary(pl.UTF-8):	Napisana w czystym C biblioteka do przetwarzania danych UTF-8 Unicode
 Name:		utf8proc
 Version:	2.10.0
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/JuliaStrings/utf8proc/releases
